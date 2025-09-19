@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: #ddd;
+    font-size: 48px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+img{
+    max-width: 20%;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 2.5%;
+}
+
+#click {
+    margin-top: 4%;
+    border: 1px solid #56acda;
+    background-color: #56acda;
+    padding: 10px 80px;
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    img{
+        max-width: 70%;
+    }
+    h1 {
+        font-size: 40px;
+        margin-top: 22%;
+    }
+    #click {
+        padding: 10px 40px;
+        margin-top: 10%;
+    }
+    
+}
