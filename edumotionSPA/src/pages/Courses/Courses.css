@@ -1,0 +1,146 @@
+.courses-title{
+    text-align: center;
+    color: #ddd;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.bigContainer{
+    margin-top: 40px;;
+}
+
+h5{
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+}
+
+#click{
+    font-weight: 500;
+}
+
+#trending{
+    font-weight: 200;
+}
+
+.card-container{
+    max-width: 1200px;
+    margin: 40px auto 0 auto;
+    padding: 0 20px;
+}
+
+
+
+.card {
+    width: 220px;
+    min-width: 220px; /* Prevent shrinking */
+    background: #0a1a2f;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card .images {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+p{
+    color: #ddd;
+    font-size: 16px;
+    margin: 20px 0;
+    line-height: 1.5;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+#card-button{
+    background-color: #56acda;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.course-title {
+    font-size: 1.2rem;
+    margin: 0.6rem 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.author, .price {
+    margin: 0.5rem 0;
+}
+
+.author {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;  /* Limit to 3 lines */
+    line-clamp: 3;      /* Limit to 3 lines */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    line-height: 1.4;
+}
+
+.card-wrapper {
+    display: flex;
+    height: 100%;
+}
+
+
+.price{
+    color: #FFDE59;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+#card-button:hover {
+    background-color: #0056b3;
+}
+
+.slick-track {
+    display: flex !important;
+    align-items: stretch !important;
+}
+
+.slick-slide {
+    display: flex !important;
+    justify-content: center;
+    align-items: stretch;
+    height: auto !important;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+.card-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
+    padding: 16px;
+    scroll-snap-type: x mandatory;
+}
+
+.card {
+    flex: 0 0 80vw;
+    scroll-snap-align: center;
+}
+}
+
