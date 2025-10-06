@@ -22,7 +22,7 @@ function useIsMobile(breakpoint = 768) {
     return isMobile;
 }
 
-const Paragrapgh = ({text, className}) =>{
+const Paragraph = ({text, className}) =>{
     return (<p className={className}>{text}</p>)
 }
 
@@ -33,8 +33,8 @@ const CoursesCard = ({title,url,text, price}) => {
     <div className='card'>
         <img className="images" src={url} />
         <Title text={title} className='course-title'/>
-        <Paragrapgh text={text} className='author'/>
-        <Paragrapgh text={`COL $${price}`} className='price'/>
+        <Paragraph text={text} className='author'/>
+        <Paragraph text={`COL $${price}`} className='price'/>
         <button id='card-button' onClick={() => setHasLiked(!hasLiked)}>
             {hasLiked ? "Enlistado ❤️":"Unirme 📝"} 
         </button>
